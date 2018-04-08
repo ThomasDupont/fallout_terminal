@@ -1,5 +1,9 @@
 <div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
+    <pre><span id="first">{{ first }}</span><input id="prompt" type="text" (keypress)="onKey($event)"></pre>
+    <div id="selection">
+        <button (click)="action($event)" class="action" id="daily"><pre>[Daily]</pre></button><br>
+        <button (click)="action($event)" class="action" id="command"><pre>[Command]</pre></button><br>
+        <button (click)="action($event)" class="action" id="exit"><pre>[Exit]</pre></button><br>
+    </div>
+
 </div>

@@ -8,8 +8,8 @@ serve = args.some(val => val === '--serve');
 
 try {
   require('dotenv').config();
-} catch {
-  console.log('asar');
+} catch (e) {
+  console.log(e.message);
 }
 
 function createWindow() {
